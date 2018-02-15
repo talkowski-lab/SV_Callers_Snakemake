@@ -1,0 +1,11 @@
+Building DAG of jobs...
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00512.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00513.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00514.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00731.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00732.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//HG00733.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//NA19238.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//NA19239.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment//NA19240.bam contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Nothing to be done.

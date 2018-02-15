@@ -1,0 +1,21 @@
+configfile: 'config.yaml'
+
+include: 'rules/run_bincov.rules'
+
+import pandas as pd
+
+with open(config['contigs']) as autofile:
+	CHROMS=[line.strip().split()[0] for line in autofile]
+
+with open(config['bam_name']) as autofile:	
+	SAMPLES=[line.strip().split()[0] for line in autofile]
+
+wildcard_constraints:
+	chrom='(' + '|'.join(CHROMS) + ')',
+	sample='(' + '|'.join(SAMPLES) + ')'
+
+rule all:
+	input:
+		expand('rawcov/{sample}.{chrom}.rawcov.bed', sample=SAMPLES, chrom=CHROMS),
+		expand('normcov/{sample}.{chrom}.normcov.bed', sample=SAMPLES, chrom=CHROMS),
+

@@ -1,0 +1,3 @@
+SyntaxError in line 36 of /data/talkowski/xuefang/data/snakemake_SV_Calling/run_bincov/rules/run_bincov.rules:
+invalid syntax
+  File "/data/talkowski/xuefang/data/snakemake_SV_Calling/run_bincov/Snakefile", line 3, in <module>

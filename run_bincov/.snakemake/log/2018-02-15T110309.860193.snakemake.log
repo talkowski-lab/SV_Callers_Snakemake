@@ -1,0 +1,4 @@
+NameError in line 15 of /data/talkowski/xuefang/data/snakemake_SV_Calling/run_bincov/rules/run_bincov.rules:
+name 'bam_path' is not defined
+  File "/data/talkowski/xuefang/data/snakemake_SV_Calling/run_bincov/Snakefile", line 3, in <module>
+  File "/data/talkowski/xuefang/data/snakemake_SV_Calling/run_bincov/rules/run_bincov.rules", line 15, in <module>

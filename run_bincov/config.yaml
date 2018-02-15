@@ -1,0 +1,6 @@
+bam_path: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment
+out_path: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/sv_calls/bincov
+contigs: ../ref/contigs.fai
+bam_name: ../ref/bam_name.txt
+bincov_size: 100
+

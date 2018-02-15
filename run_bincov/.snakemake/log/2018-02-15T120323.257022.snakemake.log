@@ -1,0 +1,14 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	216	run_bincov
+	217
+
+rule run_bincov:
+    output: rawcov/HG00732.bam.chr10.rawcov.bed, normcov/HG00732.bam.chr10.normcov.bed
+    jobid: 87
+    wildcards: sample=HG00732.bam, chrom=chr10
+

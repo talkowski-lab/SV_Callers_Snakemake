@@ -1,0 +1,47 @@
+"""
+Run_Bincov.rules
+Xuefang Zhao
+
+Apply svtk bincov on aligned samples
+"""
+
+
+with open(config['contigs']) as autofile:
+        CHROMS=[line.strip().split()[0] for line in autofile]
+
+with open(config['bam_name']) as autofile:
+        SAMPLES=[line.strip().split()[0] for line in autofile]
+
+bam_path=config['bam_path']
+
+def get_input_bam(wildcards):
+        path='{bam_path}/{sample}'
+        path = path.format(bam_path=config['bam_path'], sample= SAMPLES)
+        return path
+
+def get_output_rawcov(wildcards):
+        path='{out_path}/{sample}.{chrom}.rawcov.bed'
+        path = path.format(out_path= config['out_path'], sample =  SAMPLES ,  chrom = CHROMS)
+        return path
+
+def get_output_normcov(wildcards):
+        path='{out_path}/{sample}.{chrom}.normcov.bed'
+        path = path.format(out_path= config['out_path'], sample =  SAMPLES ,  chrom = CHROMS)
+        return path
+
+
+rule run_bincov:
+        wildcard_constraints:
+                chrom='(' + '|'.join(CHROMS) + ')',
+                sample='(' + '|'.join(SAMPLES) + ')'
+        output:
+        	rawcov='rawcov/{sample}.{chrom}.rawcov.bed',
+        	normcov='normcov/{sample}.{chrom}.normcov.bed'
+        shell:
+                """
+                svtk bincov {bam_path}.{wildcards.sample} {wildcards.chrom} \
+                output.rawcov  \
+                -n   output.normcov \
+                -b 100 -m nucleotide
+                """
+
