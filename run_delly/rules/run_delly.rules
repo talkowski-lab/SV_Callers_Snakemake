@@ -1,0 +1,43 @@
+"""
+Run_Delly.rules
+Xuefang Zhao
+
+Apply Delly on aligned samples
+"""
+
+bam_path=config['bam_path']
+out_path=config['out_path']
+ref=config['ref']
+blacklist=config['blacklist']
+
+FAMS = []
+BAMS = {}
+with open(config['fam_file']) as autofile:
+	for line in autofile:
+		fam,fa,mo,pb=line.strip().split()
+		FAMS.append(fam)
+		BAMS[fam]=['{bam_path}/{id}.bam'.format(bam_path=bam_path, id=id) for id in [fa,mo,pb]]
+
+
+
+SVTYPES= config['sv_types']
+
+wildcard_constraints:
+	svtype = '(' + '|'.join(SVTYPES) + ')',
+	fam = '(' + '|'.join(FAMS) + ')',
+
+rule delly:
+	input:
+		bams=lambda wildcards: BAMS[wildcards.fam]
+	output:
+		'{out_path}/{fam}.{svtype}.bcf'
+	shell:
+		"""
+		delly call -t {wildcards.svtype} \
+		-o {output} \
+		-x {blacklist} \
+		-q 20 -n \
+		-g {ref} \
+		{input.bams}
+		"""
+

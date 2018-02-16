@@ -1,0 +1,17 @@
+bam_path: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment
+out_path: /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly
+contigs: ../ref/contigs.fai
+bam_name: ../ref/bam_name.txt
+
+blacklist: ../ref/human.hg38.excl.tsv
+
+fam_file: ../ref/trio.txt
+
+ref: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
+
+sv_types:
+        - DEL
+        - DUP
+        - INV
+        - TRA
+

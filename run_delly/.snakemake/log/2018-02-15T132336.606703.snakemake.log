@@ -1,0 +1,4 @@
+KeyError in line 16 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+'sv_types'
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile", line 4, in <module>
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules", line 16, in <module>

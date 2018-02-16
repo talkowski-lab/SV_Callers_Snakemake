@@ -1,0 +1,15 @@
+Building DAG of jobs...
+MissingInputException in line 19 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile:
+Missing input files for rule all:
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRIDUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PURDEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHSTRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHSINV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRITRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHSDEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRIDEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHSDUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PURINV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRIINV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PURTRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PURDUP.bcf

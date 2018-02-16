@@ -1,0 +1,27 @@
+Building DAG of jobs...
+Relative file path './delly/CHS.DEL.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/CHS.DUP.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/CHS.INV.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/CHS.TRA.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.DEL.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.DUP.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.INV.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.TRA.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.DEL.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.DUP.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.INV.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.TRA.bcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+MissingInputException in line 18 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile:
+Missing input files for rule all:
+./delly/CHS.TRA.bcf
+./delly/PUR.INV.bcf
+./delly/PUR.DEL.bcf
+./delly/CHS.INV.bcf
+./delly/YRI.DEL.bcf
+./delly/YRI.TRA.bcf
+./delly/YRI.INV.bcf
+./delly/YRI.DUP.bcf
+./delly/PUR.TRA.bcf
+./delly/CHS.DEL.bcf
+./delly/CHS.DUP.bcf
+./delly/PUR.DUP.bcf

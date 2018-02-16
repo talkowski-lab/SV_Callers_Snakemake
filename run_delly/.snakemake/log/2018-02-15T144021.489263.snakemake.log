@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	delly
+	13
+
+rule delly:
+    input: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00512.bam, /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00513.bam, /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00514.bam
+    output: /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.TRA.bcf
+    jobid: 2
+    wildcards: out_path=/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly, fam=CHS, svtype=TRA
+
+Error in rule delly:
+    jobid: 2
+    output: /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.TRA.bcf
+
+RuleException:
+CalledProcessError in line 35 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+Command ' set -euo pipefail;  
+		delly call -t TRA 		-o /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.TRA.bcf 		-x ../ref/human.hg38.excl.tsv |
+		-q 20 -n 		-g /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta 		/data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00512.bam /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00513.bam /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00514.bam ' returned non-zero exit status 127.
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules", line 35, in __rule_delly
+  File "/PHShome/xz974/anaconda3_pysam/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2018-02-15T144021.489263.snakemake.log

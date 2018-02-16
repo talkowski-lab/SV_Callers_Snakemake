@@ -1,0 +1,3 @@
+NameError in line 20 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile:
+name 'svtype' is not defined
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile", line 20, in <module>

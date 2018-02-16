@@ -1,0 +1,23 @@
+configfile: 'config.yaml'
+
+include: 'rules/run_delly.rules'
+
+import pandas as pd
+
+with open(config['fam_file']) as autofile:
+        FAMS=[line.strip().split()[0] for line in autofile]
+
+SVTYPES=config['sv_types']
+bam_path=config['bam_path']
+out_path=config['out_path']
+ref=config['ref']
+blacklist=config['blacklist']
+
+wildcard_constraints:
+        svtype = '(' + '|'.join(SVTYPES) + ')',
+
+rule all:
+        input:
+                expand('{out_path}/{fam}.{svtype}.bcf', out_path=out_path, fam=FAMS, svtype=SVTYPES)
+
+

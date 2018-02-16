@@ -1,0 +1,4 @@
+TypeError in line 19 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+sequence item 0: expected str instance, list found
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile", line 4, in <module>
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules", line 19, in <module>

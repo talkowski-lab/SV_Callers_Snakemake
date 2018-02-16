@@ -1,0 +1,3 @@
+SyntaxError in line 20 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+invalid syntax
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile", line 4, in <module>

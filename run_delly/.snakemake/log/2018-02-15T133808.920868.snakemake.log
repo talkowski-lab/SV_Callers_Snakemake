@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Relative file path './delly/CHS.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/PUR.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/YRI.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Relative file path './delly/CHS.vcf' starts with './'. This is redundant and strongly discouraged. It can also lead to inconsistent results of the file-matching approach used by Snakemake. You can simply omit the './' for relative file paths.
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	3	cat_vcf
+	4
+
+rule cat_vcf:
+    output: ./delly/PUR.vcf
+    jobid: 1
+    wildcards: out_path=./delly, fam=PUR
+
+Error in rule cat_vcf:
+    jobid: 1
+    output: ./delly/PUR.vcf
+
+RuleException:
+NameError in line 74 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+The name 'fam' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules", line 74, in __rule_cat_vcf
+  File "/PHShome/xz974/anaconda3_pysam/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2018-02-15T133808.920868.snakemake.log

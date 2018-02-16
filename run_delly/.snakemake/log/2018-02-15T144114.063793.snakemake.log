@@ -1,0 +1,15 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	delly
+	13
+
+rule delly:
+    input: /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00512.bam, /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00513.bam, /data/talkowski/Samples/1000Genomes/alignment_HGSV_DS_30X_GRCh38/alignment/HG00514.bam
+    output: /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.TRA.bcf
+    jobid: 1
+    wildcards: out_path=/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly, fam=CHS, svtype=TRA
+

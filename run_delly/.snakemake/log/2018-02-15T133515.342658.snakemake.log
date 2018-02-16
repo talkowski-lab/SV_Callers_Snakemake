@@ -1,0 +1,4 @@
+WildcardError in line 68 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+No values given for wildcard 'fam'.
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile", line 4, in <module>
+  File "/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules", line 68, in <module>

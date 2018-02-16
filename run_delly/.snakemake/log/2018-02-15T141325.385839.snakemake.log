@@ -1,0 +1,15 @@
+Building DAG of jobs...
+MissingInputException in line 18 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile:
+Missing input files for rule all:
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PUR.DEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PUR.TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.DUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PUR.DUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/PUR.INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRI.TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRI.DEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRI.INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/CHS.DEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/YRI.DUP.bcf

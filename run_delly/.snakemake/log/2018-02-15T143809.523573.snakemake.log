@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in line 29 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/rules/run_delly.rules:
+Missing input files for rule delly:
+{out_path}/{mo}/bam
+{out_path}/{pb}/bam
+{out_path}/{fa}/bam

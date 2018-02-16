@@ -1,0 +1,15 @@
+Building DAG of jobs...
+MissingInputException in line 19 of /data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/Snakefile:
+Missing input files for rule all:
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['CHS', 'HG00512', 'HG00513', 'HG00514']INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['PUR', 'HG00731', 'HG00732', 'HG00733']TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['YRI', 'NA19239', 'NA19238', 'NA19240']DEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['PUR', 'HG00731', 'HG00732', 'HG00733']DEL.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['CHS', 'HG00512', 'HG00513', 'HG00514']DUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['PUR', 'HG00731', 'HG00732', 'HG00733']DUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['YRI', 'NA19239', 'NA19238', 'NA19240']TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['PUR', 'HG00731', 'HG00732', 'HG00733']INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['CHS', 'HG00512', 'HG00513', 'HG00514']TRA.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['YRI', 'NA19239', 'NA19238', 'NA19240']DUP.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['YRI', 'NA19239', 'NA19238', 'NA19240']INV.bcf
+/data/talkowski/xuefang/data/SV_Callers_Snakemake/run_delly/delly/['CHS', 'HG00512', 'HG00513', 'HG00514']DEL.bcf
